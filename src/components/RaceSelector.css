@@ -1,0 +1,32 @@
+
+  
+  .header h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .race-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .race-dropdown:hover,
+  .race-dropdown:focus {
+    border-color: #007bff;
+  }
+  
+  .track-preview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .track-image {
+    width: auto; /* Maintain aspect ratio */
+    max-width: 30%; /* Ensure it fits within the container */
+    height: auto; /* Adjust height dynamically */
+  }
+  

@@ -1,0 +1,153 @@
+/* src/App.css */
+
+/* Import F1 Turbo Font */
+@font-face {
+  font-family: 'F1 Turbo';
+  src: url('/Users/paritoshkumar/Downloads/cohort3/f1-2025-predictor/public/fonts/Formula1-Regular.otf') format('opentype');
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  background-color: #1E1E1E; /* Dark background inspired by F1 graphics */
+  color: #FFFFFF;
+  font-family: 'F1 Turbo', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #E10600; /* F1 Red */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.f1-title {
+  font-size: 2.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f1-logo {
+  height: 50px; /* Adjust as needed */
+  margin-right: 15px;
+}
+
+.f1-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.logo {
+  width: 90px; /* Reduce width to shorten size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Keep space between logo and title */
+  margin-left: -70px; /* Move the logo slightly to the left */
+}
+
+/* Race Selector Styles */
+.race-selector {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.race-selector label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.race-selector select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #E10600;
+  background-color: #333;
+  color: #FFFFFF;
+  border-radius: 5px;
+  appearance: none; /* Remove default arrow */
+  cursor: pointer;
+}
+
+/* Predictions Styles */
+.predictions {
+  background-color: #2D2D2D;
+  border-left: 5px solid #E10600;
+  padding: 20px;
+  margin: 20px 0;
+  width: 80%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.predictions h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.predictions p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Standings Styles */
+.standings {
+  width: 90%;
+  margin-top: 30px;
+}
+
+.standings h2 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.standings-table th,
+.standings-table td {
+  border: 1px solid #444;
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.standings-table thead {
+  background-color: #444;
+  color: #FFFFFF;
+}
+
+.standings-table tbody tr:nth-child(odd) {
+  background-color: #333;
+}
+
+.standings-table tbody tr:nth-child(even) {
+  background-color: #2D2D2D;
+}
+
